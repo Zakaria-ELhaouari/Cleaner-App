@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid Margin="2.133,-9.067,-2.133,0" Background="#FF2E3349">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Path Grid.ColumnSpan="2" Data="M0.5,0.5 L161.9,0.5 L161.9,457.567 L0.5,457.567 z" Fill="#FF181E36" HorizontalAlignment="Left" Height="459.567" Margin="-2.368,-0.5,0,0" Stretch="Fill" VerticalAlignment="Top" Width="162.4"/>
+        <Button x:Name="vue_ensemble" Grid.ColumnSpan="2" Content="VUE D'ENSEMBLE" HorizontalAlignment="Left" Height="36.267" Margin="0,125.033,0,0" VerticalAlignment="Top" Width="158.2" Background="{x:Null}" HorizontalContentAlignment="Center" Padding="1,1,-40,1" FontSize="14" BorderBrush="#00000000" Foreground="#FF007EF9"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="25.6" Margin="14.367,131.267,0,0" VerticalAlignment="Top" Width="24">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="home.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="analyse_bar" Grid.ColumnSpan="2" Content="ANALYSER" HorizontalAlignment="Left" Height="36.267" Margin="0,182.635,0,0" VerticalAlignment="Top" Width="158.2" Background="{x:Null}" HorizontalContentAlignment="Center" Padding="1,1,-40,1" FontSize="14" Foreground="#FF0092F9" BorderBrush="#00000000" Click="analyse_bar_Click"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="25.6" Margin="14.367,188.869,0,0" VerticalAlignment="Top" Width="24">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="diagram.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="historique" Grid.ColumnSpan="2" Content="HISTORIQUE" HorizontalAlignment="Left" Height="36.267" Margin="0,234.905,0,0" VerticalAlignment="Top" Width="158.2" Background="{x:Null}" HorizontalContentAlignment="Center" Padding="1,1,-40,1" FontSize="14" Foreground="#FF0092F9" BorderBrush="#00000000"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="25.6" Margin="14.367,241.139,0,0" VerticalAlignment="Top" Width="24">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="calendar.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="OPTIONS" Grid.ColumnSpan="2" Content="OPTIONS" HorizontalAlignment="Left" Height="36.267" Margin="0,290.108,0,0" VerticalAlignment="Top" Width="158.2" Background="{x:Null}" HorizontalContentAlignment="Center" Padding="1,1,-40,1" FontSize="14" Foreground="#FF0092F9" BorderBrush="#00000000"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="25.6" Margin="14.367,296.342,0,0" VerticalAlignment="Top" Width="24">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="settings.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="site_web" Grid.ColumnSpan="2" Content="SITE WEB" HorizontalAlignment="Left" Height="39.2" Margin="14.367,361.267,0,0" VerticalAlignment="Top" Width="127.2" Background="#FF0092F9" BorderBrush="{x:Null}" Foreground="White" FontSize="16"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="124.033" Margin="158.2,-0.5,0,0" VerticalAlignment="Top" Width="641.8" Fill="#FF181E36"/>
+        <Button x:Name="finish_anylse" Grid.ColumnSpan="2" Content="FINISH" HorizontalAlignment="Left" Height="39.2" Margin="629.367,46.267,0,0" VerticalAlignment="Top" Width="127.2" Background="#FF027BFF" BorderBrush="{x:Null}" Foreground="White" FontSize="16" Click="finish_anylse_Click"/>
+        <Button x:Name="netoyer" Grid.ColumnSpan="2" Content="NETTOYER" HorizontalAlignment="Left" Height="174" Margin="220,180,0,0" VerticalAlignment="Top" Width="138" Background="#FF252A40" FontSize="18" VerticalContentAlignment="Bottom" Padding="1,1,1,22" Foreground="#FF007EF9" BorderBrush="{x:Null}" Click="netoyer_Click"/>
+        <Button x:Name="anaylse_topBar" Grid.ColumnSpan="2" Content="ANALYSER" HorizontalAlignment="Left" Height="39" Margin="629,45,0,0" VerticalAlignment="Top" Width="128" Background="#FF027BFF" BorderBrush="{x:Null}" Foreground="White" FontSize="16" Click="anaylse_topBar_Click_1"/>
+        <Rectangle x:Name="icon_nett" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="66" Margin="252,214,0,0" VerticalAlignment="Top" Width="69">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="mop.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="historique1" Grid.ColumnSpan="2" Content="HISTORIQUE" HorizontalAlignment="Left" Height="174" Margin="400,180,0,0" VerticalAlignment="Top" Width="138" Background="#FF252A40" FontSize="18" VerticalContentAlignment="Bottom" Padding="1,1,1,22" Foreground="#FF007EF9" BorderBrush="{x:Null}" Click="historique1_Click"/>
+        <Rectangle x:Name="icon_hist" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="66" Margin="431,214,0,0" VerticalAlignment="Top" Width="69">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="history-clock-button.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="mettre_jour" Grid.ColumnSpan="2" Content="METTRE A JOUR" HorizontalAlignment="Left" Height="174" Margin="580,180,0,0" VerticalAlignment="Top" Width="138" Background="#FF252A40" FontSize="18" VerticalContentAlignment="Bottom" Padding="1,1,1,22" Foreground="#FF007EF9" BorderBrush="{x:Null}" Click="mettre_jour_Click_1"/>
+        <Rectangle x:Name="icon_mettre" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="66" Margin="611,214,0,0" VerticalAlignment="Top" Width="69">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="refresh.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="analyse_nes" Grid.ColumnSpan="2" Content="Analyse  du PC nécessaire" HorizontalAlignment="Left" Height="44.317" Margin="176.367,10,0,0" VerticalAlignment="Top" Width="424.2" FontSize="24" Foreground="White"/>
+        <Label x:Name="statusEspace_net" Grid.ColumnSpan="2" Content="A demmerer  par analyse" HorizontalAlignment="Left" Height="26.15" Margin="322.767,53.317,0,0" VerticalAlignment="Top" Width="195.6" Foreground="White"/>
+        <Label x:Name="statusAnalyse_date" Grid.ColumnSpan="2" Content="08/09/2020" HorizontalAlignment="Left" Height="26.15" Margin="322.767,71.317,0,0" VerticalAlignment="Top" Width="195.6" Foreground="White"/>
+        <Label x:Name="statusMise_date" Grid.ColumnSpan="2" Content="08/09/2020" HorizontalAlignment="Left" Height="26.15" Margin="322.767,90.817,0,0" VerticalAlignment="Top" Width="195.6" Foreground="White"/>
+        <TextBlock x:Name="datail_anylse" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="62.65" Margin="198.032,55.817,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152.735" FontSize="14" Foreground="#FFFFF4F4" FontWeight="Bold"><Run Text="Espace a nettoyer :"/><LineBreak/><Run Text="Derniere analyse :"/><LineBreak/><Run Text="Dernier MAJ :"/></TextBlock>
+        <Rectangle Grid.ColumnSpan="2" Fill="#FF0092F9" HorizontalAlignment="Left" Height="78.6" Margin="158.2,380.467,0,0" VerticalAlignment="Top" Width="641.8"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="48.6" Margin="201.134,410.467,0,0" TextWrapping="Wrap" Text="PC_Cleaner est un lgiciel mode in Netherlands qui respect votre vir privee." VerticalAlignment="Top" Width="555.433" FontSize="16" Foreground="White"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="146.867" Margin="14.367,-15.6,0,0" VerticalAlignment="Top" Width="127.2">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="3b63b816-e1f4-4f1b-807a-99405b3bd10d_200x200.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="progressBar" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="12.8" Margin="176.367,61.567,0,0" VerticalAlignment="Top" Width="424.2" Fill="#FFA89DD6" Visibility="Hidden"/>
+        <Rectangle x:Name="progres" Grid.ColumnSpan="2" Fill="#FF3100FD" HorizontalAlignment="Left" Height="12.8" Margin="176.367,61.567,0,0" VerticalAlignment="Top" Width="23.4" Visibility="Hidden"/>
+        <Label x:Name="size_text" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="30.033" Margin="220.167,128.267,0,0" VerticalAlignment="Top" Width="498" FontWeight="Bold" FontStyle="Italic"/>
+        <Label x:Name="size_textInfo" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="30.033" Margin="220.167,161.267,0,0" VerticalAlignment="Top" Width="498"/>
+        <Label x:Name="histo_text" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="64.228" Margin="220.167,126.267,0,0" VerticalAlignment="Top" Width="498"/>
+        <Label x:Name="version_box" Grid.ColumnSpan="2" Content="version 1.0" HorizontalAlignment="Left" Height="31.2" Margin="75.867,427.867,0,0" VerticalAlignment="Top" Width="82.333" Foreground="White"/>
+    </Grid>
+</Window>
